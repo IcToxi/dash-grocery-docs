@@ -1,2 +1,2 @@
 # dash-grocery-docs
-Documentation
+The documentation of Dash Grocery.
