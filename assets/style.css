@@ -1,0 +1,280 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #233127;
+  background: #fbfcf9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+a {
+  color: #456a2d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site {
+  min-height: 100vh;
+}
+
+.header,
+.main,
+.footer {
+  width: min(900px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  min-height: 72px;
+  border-bottom: 1px solid #e3e9df;
+}
+
+.brand {
+  color: #233127;
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.header nav {
+  display: flex;
+  gap: 22px;
+  font-size: 13px;
+}
+
+.intro {
+  padding: 82px 0 42px;
+}
+
+.eyebrow {
+  color: #587d37;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 1.4px;
+}
+
+h1 {
+  max-width: 700px;
+  margin: 12px 0;
+  font-size: clamp(38px, 7vw, 58px);
+  letter-spacing: -2.5px;
+  line-height: 1.1;
+}
+
+.intro > p:not(.eyebrow),
+.section-heading p {
+  max-width: 640px;
+  color: #647168;
+}
+
+.install-line {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  gap: 18px;
+}
+
+.install-line code,
+.code-block {
+  padding: 12px 15px;
+  border-radius: 7px;
+  background: #1c2921;
+  color: #e6eee2;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+}
+
+.demo {
+  padding: 20px;
+  border: 1px solid #e3e9df;
+  border-radius: 10px;
+  background: white;
+}
+
+.previews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.preview {
+  display: grid;
+  min-width: 200px;
+  min-height: 90px;
+  padding: 14px;
+  align-content: center;
+  gap: 9px;
+  border-radius: 7px;
+  background: #f5f8f1;
+}
+
+.preview-code {
+  min-width: 250px;
+}
+
+.example-code {
+  width: fit-content;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: #e9eee4;
+  color: #53644f;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 9px;
+}
+
+.preview-grid {
+  flex: 1 1 100%;
+}
+
+.grid-demo-card {
+  display: grid;
+  height: 100%;
+  border: 1px solid #d5e0cb;
+  border-radius: 5px;
+  background: white;
+  color: #456a2d;
+  font-size: 11px;
+  font-weight: 650;
+  place-items: center;
+}
+
+.preview > span {
+  color: #718071;
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 1px;
+}
+
+.clock {
+  color: #375d22;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.caption {
+  margin: 10px 0 0;
+  color: #7c887e;
+  font-size: 11px;
+}
+
+.section {
+  padding: 58px 0;
+  border-bottom: 1px solid #e3e9df;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+}
+
+.section-heading h2 {
+  margin-bottom: 4px;
+  font-size: 27px;
+  letter-spacing: -1px;
+}
+
+.section-heading p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.code-block {
+  overflow: auto;
+  margin: 0;
+  line-height: 1.8;
+  white-space: pre;
+}
+
+.quickstart > p:last-child {
+  margin: 12px 0 0;
+  color: #647168;
+  font-size: 12px;
+}
+
+.component-list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.component-group {
+  padding: 15px;
+  border: 1px solid #e3e9df;
+  border-radius: 8px;
+  background: white;
+}
+
+.component-group h3 {
+  margin: 0 0 5px;
+  font-size: 13px;
+}
+
+.component-group p {
+  margin: 0;
+  color: #647168;
+  font-size: 11px;
+}
+
+.note {
+  margin: 14px 0 0;
+  color: #647168;
+  font-size: 11px;
+}
+
+.footer {
+  min-height: 70px;
+  color: #647168;
+  font-size: 11px;
+}
+
+@media (max-width: 560px) {
+  .header,
+  .main,
+  .footer {
+    width: calc(100% - 30px);
+  }
+
+  .header nav {
+    gap: 12px;
+    font-size: 11px;
+  }
+
+  .intro {
+    padding-top: 58px;
+  }
+
+  .install-line {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .component-list {
+    grid-template-columns: 1fr;
+  }
+
+  .preview,
+  .preview-code {
+    width: 100%;
+    min-width: 0;
+  }
+}
